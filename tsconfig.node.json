@@ -6,6 +6,7 @@
     "module": "esnext",
     "types": ["node", "vitest"],
     "skipLibCheck": true,
+    "strict": true,
 
     /* Bundler mode */
     "moduleResolution": "bundler",
