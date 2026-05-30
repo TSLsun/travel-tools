@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, useCallback } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 import type { AppSettings, Phrase, ScenarioKey } from '../types'
 import type { ThemeTokens } from '../theme'
@@ -27,13 +27,12 @@ export default function TranslateModal({ initialMode, settings, T, onClose, onSa
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const streamRef = useRef<MediaStream | null>(null)
 
-  useEffect(() => {
-    if (mode === 'camera') startCamera()
-    else stopCamera()
-    return () => { stopCamera() }
-  }, [mode])
+  const stopCamera = useCallback(() => {
+    streamRef.current?.getTracks().forEach(t => t.stop())
+    streamRef.current = null
+  }, [])
 
-  async function startCamera() {
+  const startCamera = useCallback(async (): Promise<string | null> => {
     try {
       const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } })
       streamRef.current = stream
@@ -41,16 +40,22 @@ export default function TranslateModal({ initialMode, settings, T, onClose, onSa
         videoRef.current.srcObject = stream
         videoRef.current.play()
       }
+      return null
     } catch {
-      setErrorMsg('Camera access denied')
-      setStatus('error')
+      return 'Camera access denied'
     }
-  }
+  }, [])
 
-  function stopCamera() {
-    streamRef.current?.getTracks().forEach(t => t.stop())
-    streamRef.current = null
-  }
+  useEffect(() => {
+    if (mode === 'camera') {
+      startCamera().then(err => {
+        if (err) { setErrorMsg(err); setStatus('error') }
+      })
+    } else {
+      stopCamera()
+    }
+    return () => { stopCamera() }
+  }, [mode, startCamera, stopCamera])
 
   function captureBase64(): string {
     const video = videoRef.current!
