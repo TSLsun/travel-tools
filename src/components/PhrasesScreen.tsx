@@ -56,7 +56,7 @@ export default function PhrasesScreen({ settings, T, onSelectPhrase, initialScen
           <button
             key={phrase.id}
             onClick={() => onSelectPhrase(phrase)}
-            style={{ width: '100%', background: T.surface, border: `1px solid ${T.border}`, borderRadius: 10, padding: '12px 14px', marginBottom: 8, cursor: 'pointer', textAlign: 'left', display: 'block' }}
+            style={{ width: '100%', background: T.surface, border: 'none', borderRadius: 10, padding: '12px 14px', marginBottom: 8, cursor: 'pointer', textAlign: 'left', display: 'block' }}
           >
             <div style={{ color: T.text, fontFamily: "'Noto Sans JP', sans-serif", fontSize: 15, fontWeight: 500, marginBottom: 2 }}>{phrase.japanese}</div>
             <div style={{ color: T.muted, fontSize: 11 }}>{phrase.romaji}</div>

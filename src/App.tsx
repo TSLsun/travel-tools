@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { loadSettings, saveSettings } from './utils/storage'
 import { THEMES, nextTheme } from './theme'
 import type { AppSettings, Phrase, ScenarioKey } from './types'
@@ -20,6 +20,11 @@ export default function App() {
 
   const T = THEMES[settings.theme]
   const themeLabel = settings.theme === 'dark' ? '🌙' : settings.theme === 'light' ? '☀️' : '📜'
+
+  useEffect(() => {
+    document.documentElement.style.background = T.bg
+    document.body.style.background = T.bg
+  }, [T.bg])
 
   function updateSettings(patch: Partial<AppSettings>) {
     const updated = { ...settings, ...patch }

@@ -21,7 +21,7 @@ export const THEMES: Record<Theme, ThemeTokens> = {
     muted: '#8a9bbf',
     accent: '#4a7fcb',
     accentShadow: 'rgba(74,127,203,0.35)',
-    border: '#1e2d4a',
+    border: '#14203a',
     chip: { bg: '#243356', text: '#a8c0e8' },
   },
   light: {
