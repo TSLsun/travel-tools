@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bg" cx="48%" cy="36%" r="72%">
+      <stop offset="0%" stop-color="#18253c"/>
+      <stop offset="100%" stop-color="#070f1c"/>
+    </radialGradient>
+    <radialGradient id="bubble" cx="38%" cy="32%" r="62%">
+      <stop offset="0%" stop-color="#e03c32"/>
+      <stop offset="100%" stop-color="#a81e16"/>
+    </radialGradient>
+    <radialGradient id="shine" cx="36%" cy="28%" r="52%">
+      <stop offset="0%" stop-color="rgba(255,215,200,0.32)"/>
+      <stop offset="100%" stop-color="rgba(255,215,200,0)"/>
+    </radialGradient>
+    <filter id="tailShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="rgba(0,0,0,0.4)"/>
+    </filter>
+  </defs>
+
+  <!-- Rounded square background -->
+  <rect width="512" height="512" rx="108" fill="url(#bg)"/>
+
+  <!-- Subtle inner vignette -->
+  <rect width="512" height="512" rx="108" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="2"/>
+
+  <!-- Speech bubble tail — drawn first so circle overlaps seam -->
+  <path d="M 302 358 L 384 474 L 210 374 Z" fill="#a81e16" filter="url(#tailShadow)"/>
+
+  <!-- Red circle — Japanese sun / speech bubble body -->
+  <circle cx="248" cy="222" r="158" fill="url(#bubble)"/>
+
+  <!-- Highlight shine layer on circle -->
+  <circle cx="248" cy="222" r="158" fill="url(#shine)"/>
+
+  <!-- Thin inner rim for depth -->
+  <circle cx="248" cy="222" r="156" fill="none" stroke="rgba(255,150,120,0.18)" stroke-width="3"/>
+
+  <!-- Japanese hiragana あ — represents language / translation -->
+  <text
+    x="248"
+    y="244"
+    font-family="'Hiragino Sans', 'Noto Sans JP', 'Yu Gothic', 'Meiryo', 'MS Gothic', sans-serif"
+    font-size="186"
+    font-weight="300"
+    fill="rgba(255,255,255,0.95)"
+    text-anchor="middle"
+    dominant-baseline="middle"
+  >あ</text>
+</svg>
