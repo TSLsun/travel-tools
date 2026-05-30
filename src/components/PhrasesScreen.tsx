@@ -10,10 +10,11 @@ interface Props {
   T: ThemeTokens
   onOpenTranslate: (mode: 'voice' | 'camera' | 'type') => void
   onSelectPhrase: (phrase: Phrase) => void
+  initialScenario?: ScenarioKey | 'all'
 }
 
-export default function PhrasesScreen({ settings, T, onSelectPhrase }: Props) {
-  const [activeScenario, setActiveScenario] = useState<ScenarioKey | 'all'>('all')
+export default function PhrasesScreen({ settings, T, onSelectPhrase, initialScenario }: Props) {
+  const [activeScenario, setActiveScenario] = useState<ScenarioKey | 'all'>(initialScenario ?? 'all')
   const [query, setQuery] = useState('')
 
   const all = getAllPhrases(settings.customPhrases)
