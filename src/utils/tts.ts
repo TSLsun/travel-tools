@@ -15,9 +15,21 @@ export interface RecognitionResult {
   confidence: number
 }
 
+interface SpeechRecognitionInstance {
+  lang: string
+  interimResults: boolean
+  maxAlternatives: number
+  onresult: ((event: SpeechRecognitionEvent) => void) | null
+  onerror: ((event: SpeechRecognitionErrorEvent) => void) | null
+  start(): void
+  stop(): void
+}
+
+type SpeechRecognitionCtor = new () => SpeechRecognitionInstance
+
 type AnyWindow = typeof window & {
-  SpeechRecognition?: new () => SpeechRecognition
-  webkitSpeechRecognition?: new () => SpeechRecognition
+  SpeechRecognition?: SpeechRecognitionCtor
+  webkitSpeechRecognition?: SpeechRecognitionCtor
 }
 
 export function startRecognition(

@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach, vi } from 'vitest'
+import { describe, it, expect, beforeEach } from 'vitest'
 import { loadSettings, saveSettings, updateSetting } from '../storage'
 import { DEFAULT_SETTINGS, STORAGE_KEY } from '../../constants'
 
