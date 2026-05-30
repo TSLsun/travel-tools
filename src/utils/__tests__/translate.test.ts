@@ -5,7 +5,7 @@ vi.mock('tesseract.js', () => ({ recognize: vi.fn() }))
 import { recognize } from 'tesseract.js'
 
 const mockFetch = vi.fn()
-global.fetch = mockFetch
+;(globalThis as unknown as { fetch: typeof mockFetch }).fetch = mockFetch
 
 describe('translateText', () => {
   beforeEach(() => mockFetch.mockReset())
