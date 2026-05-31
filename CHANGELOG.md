@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0](https://github.com/TSLsun/travel-tools/compare/travel-tools-v1.0.0...travel-tools-v1.1.0) (2026-05-31)
+
+
+### Features
+
+* add PWA app icon — red speech-sun with あ mark ([#6](https://github.com/TSLsun/travel-tools/issues/6)) ([0b3a594](https://github.com/TSLsun/travel-tools/commit/0b3a5947326c61e96b98ff387ad4a2e731552b01))
+* change icon color from red to sky blue ([#8](https://github.com/TSLsun/travel-tools/issues/8)) ([9c8a55d](https://github.com/TSLsun/travel-tools/commit/9c8a55d35b0bc3d3e1514bea35ed7d08a4574fc7))
+
 ## 1.0.0 (2026-05-30)
 
 
