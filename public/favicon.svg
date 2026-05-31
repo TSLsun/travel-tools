@@ -5,17 +5,17 @@
       <stop offset="100%" stop-color="#070f1c"/>
     </radialGradient>
     <radialGradient id="bubble" cx="38%" cy="32%" r="62%">
-      <stop offset="0%" stop-color="#e03c32"/>
-      <stop offset="100%" stop-color="#a81e16"/>
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0369a1"/>
     </radialGradient>
     <radialGradient id="shine" cx="36%" cy="28%" r="52%">
-      <stop offset="0%" stop-color="rgba(255,215,200,0.32)"/>
-      <stop offset="100%" stop-color="rgba(255,215,200,0)"/>
+      <stop offset="0%" stop-color="rgba(200,240,255,0.35)"/>
+      <stop offset="100%" stop-color="rgba(200,240,255,0)"/>
     </radialGradient>
   </defs>
 
   <rect width="512" height="512" rx="108" fill="url(#bg)"/>
-  <path d="M 302 358 L 384 474 L 210 374 Z" fill="#a81e16"/>
+  <path d="M 302 358 L 384 474 L 210 374 Z" fill="#025e90"/>
   <circle cx="248" cy="222" r="158" fill="url(#bubble)"/>
   <circle cx="248" cy="222" r="158" fill="url(#shine)"/>
   <text
