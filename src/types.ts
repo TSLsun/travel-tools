@@ -6,6 +6,8 @@ export type ScenarioKey =
   | 'navigation'
   | 'transit'
   | 'emergency'
+  | 'restaurant'
+  | 'convenience'
 
 export type Theme = 'dark' | 'light' | 'sepia'
 export type NativeLang = 'zh-TW' | 'en'
@@ -27,4 +29,5 @@ export interface AppSettings {
   recentlyUsedIds: string[]   // max 10, phrase ids, newest first
   customPhrases: Phrase[]
   favoritePhraseIds: string[]
+  partySize: number
 }
