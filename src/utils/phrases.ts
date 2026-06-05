@@ -41,3 +41,7 @@ export function getRecentlyUsed(phrases: Phrase[], recentIds: string[]): Phrase[
   const map = new Map(phrases.map(p => [p.id, p]))
   return recentIds.map(id => map.get(id)).filter(Boolean) as Phrase[]
 }
+
+export function renderJapanese(japanese: string, count: number): string {
+  return japanese.replace(/\{n\}/g, String(count))
+}

@@ -5,6 +5,7 @@ import {
   getFavorites,
   getRecentlyUsed,
   getAllPhrases,
+  renderJapanese,
 } from '../phrases'
 import type { Phrase } from '../../types'
 
@@ -81,5 +82,20 @@ describe('getRecentlyUsed', () => {
   })
   it('silently skips unknown ids', () => {
     expect(getRecentlyUsed(mockPhrases, ['unknown'])).toHaveLength(0)
+  })
+})
+
+describe('renderJapanese', () => {
+  it('replaces {n} with the given count', () => {
+    expect(renderJapanese('{n}名お願いします', 3)).toBe('3名お願いします')
+  })
+  it('replaces all occurrences of {n}', () => {
+    expect(renderJapanese('{n}名、{n}席', 2)).toBe('2名、2席')
+  })
+  it('returns the string unchanged when no {n} present', () => {
+    expect(renderJapanese('温めてください', 5)).toBe('温めてください')
+  })
+  it('works with count = 1', () => {
+    expect(renderJapanese('{n}名で予約しています', 1)).toBe('1名で予約しています')
   })
 })
