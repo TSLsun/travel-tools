@@ -11,7 +11,7 @@ interface Props {
 }
 
 export default function SettingsScreen({ settings, updateSettings, T }: Props) {
-  const { theme, nativeLang, customPhrases } = settings
+  const { theme, nativeLang, customPhrases, partySize } = settings
   const themeLabels: Record<string, string> = { dark: '🌙 Dark', light: '☀️ Light', sepia: '📜 Sepia' }
 
   function deleteCustomPhrase(id: string) {
@@ -47,6 +47,27 @@ export default function SettingsScreen({ settings, updateSettings, T }: Props) {
             </button>
           ))}
         </div>
+      </div>
+
+      {/* Party size */}
+      <div style={{ marginBottom: 20 }}>
+        <div style={{ color: T.muted, fontSize: 11, textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 8 }}>旅行人數</div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+          <button
+            onClick={() => updateSettings({ partySize: Math.max(1, partySize - 1) })}
+            style={{ background: T.surface2, color: T.text, border: 'none', borderRadius: 8, width: 36, height: 36, cursor: 'pointer', fontSize: 18, fontWeight: 700 }}
+          >
+            −
+          </button>
+          <span style={{ fontSize: 20, fontWeight: 700, color: T.text, minWidth: 24, textAlign: 'center' }}>{partySize}</span>
+          <button
+            onClick={() => updateSettings({ partySize: Math.min(9, partySize + 1) })}
+            style={{ background: T.surface2, color: T.text, border: 'none', borderRadius: 8, width: 36, height: 36, cursor: 'pointer', fontSize: 18, fontWeight: 700 }}
+          >
+            ＋
+          </button>
+        </div>
+        <div style={{ color: T.muted, fontSize: 11, marginTop: 6 }}>用於含人數的常用句（如訂位、買票）</div>
       </div>
 
       {/* Target language */}
