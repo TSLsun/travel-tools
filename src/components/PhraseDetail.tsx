@@ -19,10 +19,6 @@ export default function PhraseDetail({ phrase, isFavorite, partySize, T, onClose
   const [localCount, setLocalCount] = useState(partySize)
 
   useEffect(() => {
-    setLocalCount(partySize)
-  }, [phrase.id, partySize]) // eslint-disable-line react-hooks/exhaustive-deps
-
-  useEffect(() => {
     onUsed()
   }, [phrase.id]) // eslint-disable-line react-hooks/exhaustive-deps
 
