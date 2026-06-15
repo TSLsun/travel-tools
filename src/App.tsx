@@ -136,8 +136,10 @@ export default function App() {
 
       {selectedPhrase && (
         <PhraseDetail
+          key={selectedPhrase.id}
           phrase={selectedPhrase}
           isFavorite={settings.favoritePhraseIds.includes(selectedPhrase.id)}
+          partySize={settings.partySize}
           T={T}
           onClose={() => setSelectedPhrase(null)}
           onToggleFavorite={() => toggleFavorite(selectedPhrase.id)}
