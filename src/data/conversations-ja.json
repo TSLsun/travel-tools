@@ -1,0 +1,291 @@
+[
+  {
+    "id": "ja-conv-shopping-001",
+    "scenario": "shopping",
+    "title": "詢問價格與付款",
+    "turns": [
+      { "speaker": "you",   "japanese": "いくらですか？",                 "romaji": "Ikura desu ka?",                 "meaning": "多少錢？" },
+      { "speaker": "staff", "japanese": "3,000円です。",                  "romaji": "Sanzen-en desu.",                "meaning": "3000日圓。" },
+      { "speaker": "you",   "japanese": "カードで払えますか？",           "romaji": "Kādo de haraemasu ka?",          "meaning": "可以刷卡嗎？" },
+      { "speaker": "staff", "japanese": "はい、お使いいただけます。",      "romaji": "Hai, otsukai itadakemasu.",      "meaning": "可以使用。" }
+    ]
+  },
+  {
+    "id": "ja-conv-shopping-002",
+    "scenario": "shopping",
+    "title": "試穿衣服",
+    "turns": [
+      { "speaker": "you",   "japanese": "試着してもいいですか？",                 "romaji": "Shichaku shite mo ii desu ka?",                 "meaning": "可以試穿嗎？" },
+      { "speaker": "staff", "japanese": "はい、どうぞ。試着室はあちらです。",     "romaji": "Hai, douzo. Shichakushitsu wa achira desu.",     "meaning": "好的，請。試衣間在那邊。" },
+      { "speaker": "you",   "japanese": "ありがとうございます。",                 "romaji": "Arigatou gozaimasu.",                           "meaning": "謝謝。" }
+    ]
+  },
+  {
+    "id": "ja-conv-shopping-003",
+    "scenario": "shopping",
+    "title": "詢問尺寸",
+    "turns": [
+      { "speaker": "you",   "japanese": "もっと大きいサイズはありますか？",   "romaji": "Motto ookii saizu wa arimasu ka?",     "meaning": "有更大的尺寸嗎？" },
+      { "speaker": "staff", "japanese": "少々お待ちください。お探しします。",   "romaji": "Shoushou omachi kudasai. Osagashi shimasu.", "meaning": "請稍等，我幫您找。" },
+      { "speaker": "staff", "japanese": "こちらはいかがですか？",             "romaji": "Kochira wa ikaga desu ka?",            "meaning": "這個如何？" }
+    ]
+  },
+  {
+    "id": "ja-conv-shopping-004",
+    "scenario": "shopping",
+    "title": "詢問顏色",
+    "turns": [
+      { "speaker": "you",   "japanese": "他の色はありますか？",   "romaji": "Hoka no iro wa arimasu ka?",   "meaning": "有其他顏色嗎？" },
+      { "speaker": "staff", "japanese": "白と黒がございます。",   "romaji": "Shiro to kuro ga gozaimasu.",  "meaning": "有白色和黑色。" },
+      { "speaker": "you",   "japanese": "黒をください。",         "romaji": "Kuro o kudasai.",              "meaning": "給我黑色的。" }
+    ]
+  },
+  {
+    "id": "ja-conv-shopping-005",
+    "scenario": "shopping",
+    "title": "辦理免稅",
+    "turns": [
+      { "speaker": "you",   "japanese": "免税できますか？",                   "romaji": "Menzei dekimasu ka?",              "meaning": "可以免稅嗎？" },
+      { "speaker": "staff", "japanese": "はい、パスポートをお願いします。",   "romaji": "Hai, pasupōto o onegai shimasu.",  "meaning": "可以，請出示護照。" },
+      { "speaker": "you",   "japanese": "はい、どうぞ。",                     "romaji": "Hai, douzo.",                      "meaning": "好的，給您。" }
+    ]
+  },
+  {
+    "id": "ja-conv-shopping-006",
+    "scenario": "shopping",
+    "title": "只是看看",
+    "turns": [
+      { "speaker": "staff", "japanese": "何かお探しですか？",   "romaji": "Nanika osagashi desu ka?",  "meaning": "您在找什麼嗎？" },
+      { "speaker": "you",   "japanese": "見ているだけです。",   "romaji": "Mite iru dake desu.",       "meaning": "我只是看看。" },
+      { "speaker": "staff", "japanese": "ごゆっくりどうぞ。",   "romaji": "Goyukkuri douzo.",          "meaning": "請慢慢看。" }
+    ]
+  },
+  {
+    "id": "ja-conv-shopping-007",
+    "scenario": "shopping",
+    "title": "詢問折扣",
+    "turns": [
+      { "speaker": "you",   "japanese": "少し安くなりませんか？",             "romaji": "Sukoshi yasuku narimasen ka?",       "meaning": "可以便宜一點嗎？" },
+      { "speaker": "staff", "japanese": "申し訳ありません、できかねます。",   "romaji": "Moushiwake arimasen, dekikanemasu.", "meaning": "抱歉，沒辦法。" }
+    ]
+  },
+  {
+    "id": "ja-conv-shopping-008",
+    "scenario": "shopping",
+    "title": "禮物包裝",
+    "turns": [
+      { "speaker": "you",   "japanese": "プレゼント用に包んでもらえますか？",     "romaji": "Purezento-you ni tsutsunde moraemasu ka?", "meaning": "可以包裝成禮物嗎？" },
+      { "speaker": "staff", "japanese": "かしこまりました。少々お待ちください。", "romaji": "Kashikomarimashita. Shoushou omachi kudasai.", "meaning": "好的，請稍等。" }
+    ]
+  },
+  {
+    "id": "ja-conv-shopping-009",
+    "scenario": "shopping",
+    "title": "詢問庫存",
+    "turns": [
+      { "speaker": "you",   "japanese": "これの在庫はありますか？",               "romaji": "Kore no zaiko wa arimasu ka?",           "meaning": "這個有庫存嗎？" },
+      { "speaker": "staff", "japanese": "申し訳ございません、品切れです。",       "romaji": "Moushiwake gozaimasen, shinagire desu.", "meaning": "抱歉，賣完了。" },
+      { "speaker": "you",   "japanese": "いつ入荷しますか？",                     "romaji": "Itsu nyuuka shimasu ka?",                "meaning": "什麼時候進貨？" },
+      { "speaker": "staff", "japanese": "来週の予定です。",                       "romaji": "Raishuu no yotei desu.",                 "meaning": "預計下週。" }
+    ]
+  },
+  {
+    "id": "ja-conv-shopping-010",
+    "scenario": "shopping",
+    "title": "結帳要袋子",
+    "turns": [
+      { "speaker": "staff", "japanese": "袋はご利用ですか？",                     "romaji": "Fukuro wa goriyou desu ka?",            "meaning": "需要袋子嗎？" },
+      { "speaker": "you",   "japanese": "はい、お願いします。",                   "romaji": "Hai, onegai shimasu.",                  "meaning": "好的，麻煩了。" },
+      { "speaker": "staff", "japanese": "5円かかりますが、よろしいですか？",      "romaji": "Go-en kakarimasu ga, yoroshii desu ka?", "meaning": "要5日圓，可以嗎？" },
+      { "speaker": "you",   "japanese": "大丈夫です。",                           "romaji": "Daijoubu desu.",                        "meaning": "沒問題。" }
+    ]
+  },
+
+  {
+    "id": "ja-conv-restaurant-001",
+    "scenario": "restaurant",
+    "title": "帶位與座位",
+    "turns": [
+      { "speaker": "staff", "japanese": "何名様ですか？",                                 "romaji": "Nanmei-sama desu ka?",                                 "meaning": "幾位？" },
+      { "speaker": "you",   "japanese": "二人です。",                                     "romaji": "Futari desu.",                                         "meaning": "兩位。" },
+      { "speaker": "staff", "japanese": "禁煙席と喫煙席、どちらがよろしいですか？",       "romaji": "Kin'enseki to kitsuenseki, dochira ga yoroshii desu ka?", "meaning": "禁菸席還是吸菸席？" },
+      { "speaker": "you",   "japanese": "禁煙席でお願いします。",                         "romaji": "Kin'enseki de onegai shimasu.",                        "meaning": "禁菸席，麻煩了。" }
+    ]
+  },
+  {
+    "id": "ja-conv-restaurant-002",
+    "scenario": "restaurant",
+    "title": "詢問推薦菜",
+    "turns": [
+      { "speaker": "you",   "japanese": "おすすめは何ですか？",                       "romaji": "Osusume wa nan desu ka?",                       "meaning": "有什麼推薦的？" },
+      { "speaker": "staff", "japanese": "本日は鮮魚の刺身がおすすめです。",           "romaji": "Honjitsu wa sengyo no sashimi ga osusume desu.", "meaning": "今天推薦新鮮的生魚片。" },
+      { "speaker": "you",   "japanese": "じゃあ、それをください。",                   "romaji": "Jaa, sore o kudasai.",                          "meaning": "那就要那個。" }
+    ]
+  },
+  {
+    "id": "ja-conv-restaurant-003",
+    "scenario": "restaurant",
+    "title": "點餐",
+    "turns": [
+      { "speaker": "staff", "japanese": "ご注文はお決まりですか？",   "romaji": "Gochuumon wa okimari desu ka?",  "meaning": "決定好點什麼了嗎？" },
+      { "speaker": "you",   "japanese": "ラーメンを一つください。",   "romaji": "Rāmen o hitotsu kudasai.",       "meaning": "給我一碗拉麵。" },
+      { "speaker": "staff", "japanese": "かしこまりました。",         "romaji": "Kashikomarimashita.",            "meaning": "好的。" }
+    ]
+  },
+  {
+    "id": "ja-conv-restaurant-004",
+    "scenario": "restaurant",
+    "title": "告知過敏",
+    "turns": [
+      { "speaker": "you",   "japanese": "卵アレルギーがあります。",             "romaji": "Tamago arerugī ga arimasu.",        "meaning": "我對蛋過敏。" },
+      { "speaker": "staff", "japanese": "かしこまりました。確認いたします。",   "romaji": "Kashikomarimashita. Kakunin itashimasu.", "meaning": "好的，我確認一下。" }
+    ]
+  },
+  {
+    "id": "ja-conv-restaurant-005",
+    "scenario": "restaurant",
+    "title": "要水",
+    "turns": [
+      { "speaker": "you",   "japanese": "お水をもらえますか？",             "romaji": "Omizu o moraemasu ka?",        "meaning": "可以給我水嗎？" },
+      { "speaker": "staff", "japanese": "はい、ただいまお持ちします。",       "romaji": "Hai, tadaima omochi shimasu.", "meaning": "好的，馬上拿來。" }
+    ]
+  },
+  {
+    "id": "ja-conv-restaurant-006",
+    "scenario": "restaurant",
+    "title": "結帳分開付",
+    "turns": [
+      { "speaker": "you",   "japanese": "お会計をお願いします。",   "romaji": "Okaikei o onegai shimasu.",      "meaning": "麻煩結帳。" },
+      { "speaker": "staff", "japanese": "全部で2,500円です。",       "romaji": "Zenbu de nisen-gohyaku-en desu.", "meaning": "總共2500日圓。" },
+      { "speaker": "you",   "japanese": "別々で払えますか？",         "romaji": "Betsubetsu de haraemasu ka?",     "meaning": "可以分開付嗎？" },
+      { "speaker": "staff", "japanese": "はい、大丈夫です。",         "romaji": "Hai, daijoubu desu.",             "meaning": "可以。" }
+    ]
+  },
+  {
+    "id": "ja-conv-restaurant-007",
+    "scenario": "restaurant",
+    "title": "詢問會不會辣",
+    "turns": [
+      { "speaker": "you",   "japanese": "これは辛いですか？",   "romaji": "Kore wa karai desu ka?",  "meaning": "這個會辣嗎？" },
+      { "speaker": "staff", "japanese": "少し辛いです。",         "romaji": "Sukoshi karai desu.",     "meaning": "有一點辣。" }
+    ]
+  },
+  {
+    "id": "ja-conv-restaurant-008",
+    "scenario": "restaurant",
+    "title": "要小盤子",
+    "turns": [
+      { "speaker": "you",   "japanese": "取り皿をもらえますか？",   "romaji": "Torizara o moraemasu ka?",  "meaning": "可以給我小盤子嗎？" },
+      { "speaker": "staff", "japanese": "はい、お持ちします。",       "romaji": "Hai, omochi shimasu.",      "meaning": "好的，拿給您。" }
+    ]
+  },
+  {
+    "id": "ja-conv-restaurant-009",
+    "scenario": "restaurant",
+    "title": "詢問等待時間",
+    "turns": [
+      { "speaker": "you",   "japanese": "どのくらい待ちますか？",             "romaji": "Dono kurai machimasu ka?",        "meaning": "要等多久？" },
+      { "speaker": "staff", "japanese": "15分ほどお待ちいただきます。",       "romaji": "Juugo-fun hodo omachi itadakimasu.", "meaning": "大約等15分鐘。" }
+    ]
+  },
+  {
+    "id": "ja-conv-restaurant-010",
+    "scenario": "restaurant",
+    "title": "外帶",
+    "turns": [
+      { "speaker": "you",   "japanese": "持ち帰りできますか？",   "romaji": "Mochikaeri dekimasu ka?",  "meaning": "可以外帶嗎？" },
+      { "speaker": "staff", "japanese": "はい、できます。",         "romaji": "Hai, dekimasu.",           "meaning": "可以。" }
+    ]
+  },
+
+  {
+    "id": "ja-conv-convenience-001",
+    "scenario": "convenience",
+    "title": "便當加熱",
+    "turns": [
+      { "speaker": "staff", "japanese": "お弁当は温めますか？",   "romaji": "Obentou wa atatamemasu ka?",  "meaning": "便當要加熱嗎？" },
+      { "speaker": "you",   "japanese": "はい、お願いします。",   "romaji": "Hai, onegai shimasu.",        "meaning": "好的，麻煩了。" }
+    ]
+  },
+  {
+    "id": "ja-conv-convenience-002",
+    "scenario": "convenience",
+    "title": "要筷子",
+    "turns": [
+      { "speaker": "staff", "japanese": "お箸はおつけしますか？",   "romaji": "Ohashi wa otsuke shimasu ka?",  "meaning": "需要筷子嗎？" },
+      { "speaker": "you",   "japanese": "はい、二膳ください。",     "romaji": "Hai, nizen kudasai.",           "meaning": "好的，給我兩雙。" }
+    ]
+  },
+  {
+    "id": "ja-conv-convenience-003",
+    "scenario": "convenience",
+    "title": "不用裝袋",
+    "turns": [
+      { "speaker": "staff", "japanese": "袋にお入れしますか？",       "romaji": "Fukuro ni oire shimasu ka?",  "meaning": "要幫您裝袋嗎？" },
+      { "speaker": "you",   "japanese": "そのままで大丈夫です。",     "romaji": "Sono mama de daijoubu desu.", "meaning": "不用，這樣就好。" }
+    ]
+  },
+  {
+    "id": "ja-conv-convenience-004",
+    "scenario": "convenience",
+    "title": "付款方式",
+    "turns": [
+      { "speaker": "staff", "japanese": "お支払い方法は？",         "romaji": "Oshiharai houhou wa?",       "meaning": "請問付款方式？" },
+      { "speaker": "you",   "japanese": "現金でお願いします。",     "romaji": "Genkin de onegai shimasu.",  "meaning": "用現金。" }
+    ]
+  },
+  {
+    "id": "ja-conv-convenience-005",
+    "scenario": "convenience",
+    "title": "集點卡",
+    "turns": [
+      { "speaker": "staff", "japanese": "ポイントカードはお持ちですか？",   "romaji": "Pointo kādo wa omochi desu ka?",  "meaning": "有集點卡嗎？" },
+      { "speaker": "you",   "japanese": "持っていません。",               "romaji": "Motte imasen.",                   "meaning": "沒有。" }
+    ]
+  },
+  {
+    "id": "ja-conv-convenience-006",
+    "scenario": "convenience",
+    "title": "詢問ATM",
+    "turns": [
+      { "speaker": "you",   "japanese": "ATMはありますか？",               "romaji": "ATM wa arimasu ka?",                  "meaning": "有ATM嗎？" },
+      { "speaker": "staff", "japanese": "はい、入口の近くにあります。",     "romaji": "Hai, iriguchi no chikaku ni arimasu.", "meaning": "有，在入口附近。" }
+    ]
+  },
+  {
+    "id": "ja-conv-convenience-007",
+    "scenario": "convenience",
+    "title": "借洗手間",
+    "turns": [
+      { "speaker": "you",   "japanese": "トイレを借りてもいいですか？",   "romaji": "Toire o karite mo ii desu ka?",  "meaning": "可以借用洗手間嗎？" },
+      { "speaker": "staff", "japanese": "はい、奥にございます。",         "romaji": "Hai, oku ni gozaimasu.",         "meaning": "可以，在裡面。" }
+    ]
+  },
+  {
+    "id": "ja-conv-convenience-008",
+    "scenario": "convenience",
+    "title": "找熱食",
+    "turns": [
+      { "speaker": "you",   "japanese": "肉まんはありますか？",         "romaji": "Nikuman wa arimasu ka?",      "meaning": "有肉包嗎？" },
+      { "speaker": "staff", "japanese": "はい、レジ横にございます。",     "romaji": "Hai, reji yoko ni gozaimasu.", "meaning": "有，在收銀台旁邊。" }
+    ]
+  },
+  {
+    "id": "ja-conv-convenience-009",
+    "scenario": "convenience",
+    "title": "不要收據",
+    "turns": [
+      { "speaker": "staff", "japanese": "レシートはご利用ですか？",   "romaji": "Reshīto wa goriyou desu ka?",  "meaning": "需要收據嗎？" },
+      { "speaker": "you",   "japanese": "いりません。",               "romaji": "Irimasen.",                    "meaning": "不用。" }
+    ]
+  },
+  {
+    "id": "ja-conv-convenience-010",
+    "scenario": "convenience",
+    "title": "要湯匙",
+    "turns": [
+      { "speaker": "staff", "japanese": "スプーンはおつけしますか？",   "romaji": "Supūn wa otsuke shimasu ka?",  "meaning": "需要湯匙嗎？" },
+      { "speaker": "you",   "japanese": "お願いします。",               "romaji": "Onegai shimasu.",              "meaning": "麻煩了。" }
+    ]
+  }
+]

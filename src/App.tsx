@@ -1,14 +1,16 @@
 import { useState, useEffect } from 'react'
 import { loadSettings, saveSettings } from './utils/storage'
 import { THEMES, nextTheme } from './theme'
-import type { AppSettings, Phrase, ScenarioKey } from './types'
+import type { AppSettings, Phrase, ScenarioKey, ConversationSet } from './types'
 import HomeScreen from './components/HomeScreen'
 import PhrasesScreen from './components/PhrasesScreen'
+import ConversationsScreen from './components/ConversationsScreen'
 import SettingsScreen from './components/SettingsScreen'
 import TranslateModal from './components/TranslateModal'
 import PhraseDetail from './components/PhraseDetail'
+import ConversationDetail from './components/ConversationDetail'
 
-type Screen = 'home' | 'phrases' | 'settings'
+type Screen = 'home' | 'phrases' | 'talk' | 'settings'
 
 export default function App() {
   const [settings, setSettings] = useState<AppSettings>(() => loadSettings())
@@ -17,6 +19,7 @@ export default function App() {
   const [translateOpen, setTranslateOpen] = useState(false)
   const [translateMode, setTranslateMode] = useState<'voice' | 'camera' | 'type'>('voice')
   const [selectedPhrase, setSelectedPhrase] = useState<Phrase | null>(null)
+  const [selectedConversation, setSelectedConversation] = useState<ConversationSet | null>(null)
 
   const T = THEMES[settings.theme]
   const themeLabel = settings.theme === 'dark' ? '🌙' : settings.theme === 'light' ? '☀️' : '📜'
@@ -107,19 +110,20 @@ export default function App() {
       <div style={{ flex: 1, overflowY: 'auto', minHeight: 0 }}>
         {screen === 'home'     && <HomeScreen     {...screenProps} />}
         {screen === 'phrases'  && <PhrasesScreen  key={phrasesScenario} initialScenario={phrasesScenario} {...screenProps} />}
+        {screen === 'talk'     && <ConversationsScreen T={T} onSelectConversation={setSelectedConversation} />}
         {screen === 'settings' && <SettingsScreen {...screenProps} />}
       </div>
 
       {/* Bottom nav */}
       <nav style={{ borderTop: `1px solid ${T.border}`, background: T.surface, display: 'flex', padding: '8px 0 12px', flexShrink: 0 }}>
-        {(['home', 'phrases', 'settings'] as Screen[]).map(s => (
+        {(['home', 'phrases', 'talk', 'settings'] as Screen[]).map(s => (
           <button
             key={s}
             onClick={() => setScreen(s)}
             style={{ flex: 1, background: 'none', border: 'none', cursor: 'pointer', padding: '6px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3, color: screen === s ? T.accent : T.muted, fontSize: 10, fontWeight: screen === s ? 600 : 400 }}
           >
-            <span style={{ fontSize: 20 }}>{s === 'home' ? '🏠' : s === 'phrases' ? '📖' : '⚙️'}</span>
-            {s === 'home' ? 'Home' : s === 'phrases' ? 'Phrases' : 'Settings'}
+            <span style={{ fontSize: 20 }}>{s === 'home' ? '🏠' : s === 'phrases' ? '📖' : s === 'talk' ? '💬' : '⚙️'}</span>
+            {s === 'home' ? 'Home' : s === 'phrases' ? 'Phrases' : s === 'talk' ? 'Talk' : 'Settings'}
           </button>
         ))}
       </nav>
@@ -144,6 +148,15 @@ export default function App() {
           onClose={() => setSelectedPhrase(null)}
           onToggleFavorite={() => toggleFavorite(selectedPhrase.id)}
           onUsed={() => recordRecentlyUsed(selectedPhrase.id)}
+        />
+      )}
+
+      {selectedConversation && (
+        <ConversationDetail
+          key={selectedConversation.id}
+          conversation={selectedConversation}
+          T={T}
+          onClose={() => setSelectedConversation(null)}
         />
       )}
     </div>
