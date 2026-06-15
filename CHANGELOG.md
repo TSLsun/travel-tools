@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/TSLsun/travel-tools/compare/travel-tools-v1.2.0...travel-tools-v1.3.0) (2026-06-15)
+
+
+### Features
+
+* add conversation threads for shopping, restaurant, convenience ([#11](https://github.com/TSLsun/travel-tools/issues/11)) ([bc94c8e](https://github.com/TSLsun/travel-tools/commit/bc94c8e6a371d7d592436e5fa22d47af25743e93))
+
 ## [1.2.0](https://github.com/TSLsun/travel-tools/compare/travel-tools-v1.1.0...travel-tools-v1.2.0) (2026-06-15)
 
 
