@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/TSLsun/travel-tools/compare/travel-tools-v1.1.0...travel-tools-v1.2.0) (2026-06-15)
+
+
+### Features
+
+* party size setting and restaurant/convenience scenarios ([#9](https://github.com/TSLsun/travel-tools/issues/9)) ([055284a](https://github.com/TSLsun/travel-tools/commit/055284a3f6d69f8239f89f7f225d8db93e254273))
+
 ## [1.1.0](https://github.com/TSLsun/travel-tools/compare/travel-tools-v1.0.0...travel-tools-v1.1.0) (2026-05-31)
 
 
