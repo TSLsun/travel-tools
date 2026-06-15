@@ -22,6 +22,22 @@ export interface Phrase {
   isFavorite: boolean
 }
 
+export type Speaker = 'you' | 'staff'
+
+export interface ConversationTurn {
+  speaker: Speaker
+  japanese: string
+  romaji: string
+  meaning: string
+}
+
+export interface ConversationSet {
+  id: string
+  scenario: ScenarioKey
+  title: string
+  turns: ConversationTurn[]
+}
+
 export interface AppSettings {
   theme: Theme
   nativeLang: NativeLang
