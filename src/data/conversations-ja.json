@@ -287,5 +287,106 @@
       { "speaker": "staff", "japanese": "スプーンはおつけしますか？",   "romaji": "Supūn wa otsuke shimasu ka?",  "meaning": "需要湯匙嗎？" },
       { "speaker": "you",   "japanese": "お願いします。",               "romaji": "Onegai shimasu.",              "meaning": "麻煩了。" }
     ]
+  },
+  {
+    "id": "ja-conv-greeting-001",
+    "scenario": "greeting",
+    "title": "初次見面",
+    "turns": [
+      { "speaker": "you",   "japanese": "はじめまして。",                       "romaji": "Hajimemashite.",                        "meaning": "初次見面。" },
+      { "speaker": "staff", "japanese": "はじめまして。よろしくお願いします。", "romaji": "Hajimemashite. Yoroshiku onegai shimasu.", "meaning": "初次見面，請多指教。" },
+      { "speaker": "you",   "japanese": "こちらこそ、よろしくお願いします。",   "romaji": "Kochira koso, yoroshiku onegai shimasu.",  "meaning": "我才要請您多指教。" }
+    ]
+  },
+  {
+    "id": "ja-conv-greeting-002",
+    "scenario": "greeting",
+    "title": "早安問候",
+    "turns": [
+      { "speaker": "staff", "japanese": "おはようございます。",             "romaji": "Ohayou gozaimasu.",          "meaning": "早安。" },
+      { "speaker": "you",   "japanese": "おはようございます。いい天気ですね。", "romaji": "Ohayou gozaimasu. Ii tenki desu ne.", "meaning": "早安，天氣真好。" },
+      { "speaker": "staff", "japanese": "そうですね。",                     "romaji": "Sou desu ne.",               "meaning": "是啊。" }
+    ]
+  },
+  {
+    "id": "ja-conv-greeting-003",
+    "scenario": "greeting",
+    "title": "詢問近況",
+    "turns": [
+      { "speaker": "you",   "japanese": "お久しぶりです。お元気ですか？",       "romaji": "Ohisashiburi desu. Ogenki desu ka?",      "meaning": "好久不見，你好嗎？" },
+      { "speaker": "staff", "japanese": "おかげさまで元気です。あなたは？",     "romaji": "Okagesama de genki desu. Anata wa?",      "meaning": "託您的福很好。你呢？" },
+      { "speaker": "you",   "japanese": "私も元気です。",                       "romaji": "Watashi mo genki desu.",                  "meaning": "我也很好。" }
+    ]
+  },
+  {
+    "id": "ja-conv-greeting-004",
+    "scenario": "greeting",
+    "title": "道別",
+    "turns": [
+      { "speaker": "you",   "japanese": "そろそろ失礼します。",     "romaji": "Sorosoro shitsurei shimasu.", "meaning": "我差不多該告辭了。" },
+      { "speaker": "staff", "japanese": "気をつけてください。",     "romaji": "Ki wo tsukete kudasai.",      "meaning": "路上小心。" },
+      { "speaker": "you",   "japanese": "ありがとうございます。さようなら。", "romaji": "Arigatou gozaimasu. Sayounara.", "meaning": "謝謝，再見。" }
+    ]
+  },
+  {
+    "id": "ja-conv-greeting-005",
+    "scenario": "greeting",
+    "title": "道謝",
+    "turns": [
+      { "speaker": "you",   "japanese": "本当にありがとうございました。", "romaji": "Hontou ni arigatou gozaimashita.", "meaning": "真的非常謝謝你。" },
+      { "speaker": "staff", "japanese": "どういたしまして。",             "romaji": "Dou itashimashite.",               "meaning": "不客氣。" },
+      { "speaker": "you",   "japanese": "また会いましょう。",             "romaji": "Mata aimashou.",                   "meaning": "再見面吧。" }
+    ]
+  },
+  {
+    "id": "ja-conv-greeting-006",
+    "scenario": "greeting",
+    "title": "晚上問候",
+    "turns": [
+      { "speaker": "staff", "japanese": "こんばんは。",                       "romaji": "Konbanwa.",                        "meaning": "晚上好。" },
+      { "speaker": "you",   "japanese": "こんばんは。今日はありがとうございました。", "romaji": "Konbanwa. Kyou wa arigatou gozaimashita.", "meaning": "晚上好，今天謝謝你。" },
+      { "speaker": "staff", "japanese": "おやすみなさい。",                   "romaji": "Oyasuminasai.",                    "meaning": "晚安。" }
+    ]
+  },
+  {
+    "id": "ja-conv-greeting-007",
+    "scenario": "greeting",
+    "title": "打招呼自我介紹",
+    "turns": [
+      { "speaker": "you",   "japanese": "こんにちは。林と申します。",                 "romaji": "Konnichiwa. Rin to moushimasu.",                 "meaning": "你好，我姓林。" },
+      { "speaker": "staff", "japanese": "こんにちは。田中です。よろしくお願いします。", "romaji": "Konnichiwa. Tanaka desu. Yoroshiku onegai shimasu.", "meaning": "你好，我是田中，請多指教。" },
+      { "speaker": "you",   "japanese": "こちらこそよろしくお願いします。",           "romaji": "Kochira koso yoroshiku onegai shimasu.",         "meaning": "我才要請您多指教。" }
+    ]
+  },
+  {
+    "id": "ja-conv-greeting-008",
+    "scenario": "greeting",
+    "title": "遲到道歉",
+    "turns": [
+      { "speaker": "you",   "japanese": "遅れてすみません。", "romaji": "Okurete sumimasen.", "meaning": "抱歉我遲到了。" },
+      { "speaker": "staff", "japanese": "大丈夫ですよ。",     "romaji": "Daijoubu desu yo.",  "meaning": "沒關係的。" },
+      { "speaker": "you",   "japanese": "ありがとうございます。", "romaji": "Arigatou gozaimasu.", "meaning": "謝謝。" }
+    ]
+  },
+  {
+    "id": "ja-conv-greeting-009",
+    "scenario": "greeting",
+    "title": "辛苦了",
+    "turns": [
+      { "speaker": "staff", "japanese": "お疲れさまです。",                     "romaji": "Otsukaresama desu.",                     "meaning": "辛苦了。" },
+      { "speaker": "you",   "japanese": "お疲れさまです。今日もありがとうございました。", "romaji": "Otsukaresama desu. Kyou mo arigatou gozaimashita.", "meaning": "辛苦了，今天也謝謝你。" },
+      { "speaker": "staff", "japanese": "また明日。",                           "romaji": "Mata ashita.",                           "meaning": "明天見。" }
+    ]
+  },
+  {
+    "id": "ja-conv-greeting-010",
+    "scenario": "greeting",
+    "title": "出門與回家",
+    "turns": [
+      { "speaker": "you",   "japanese": "いってきます。",       "romaji": "Ittekimasu.",     "meaning": "我出門了。" },
+      { "speaker": "staff", "japanese": "いってらっしゃい。",   "romaji": "Itterasshai.",    "meaning": "慢走。" },
+      { "speaker": "you",   "japanese": "ただいま。",           "romaji": "Tadaima.",        "meaning": "我回來了。" },
+      { "speaker": "staff", "japanese": "おかえりなさい。",     "romaji": "Okaerinasai.",    "meaning": "歡迎回來。" }
+    ]
   }
 ]
