@@ -345,7 +345,7 @@
     "turns": [
       { "speaker": "staff", "japanese": "こんばんは。",                       "romaji": "Konbanwa.",                        "meaning": "晚上好。" },
       { "speaker": "you",   "japanese": "こんばんは。今日はありがとうございました。", "romaji": "Konbanwa. Kyou wa arigatou gozaimashita.", "meaning": "晚上好，今天謝謝你。" },
-      { "speaker": "staff", "japanese": "おやすみなさい。",                   "romaji": "Oyasuminasai.",                    "meaning": "晚安。" }
+      { "speaker": "staff", "japanese": "どういたしまして。おやすみなさい。", "romaji": "Dou itashimashite. Oyasuminasai.", "meaning": "不客氣。晚安。" }
     ]
   },
   {
@@ -353,7 +353,7 @@
     "scenario": "greeting",
     "title": "打招呼自我介紹",
     "turns": [
-      { "speaker": "you",   "japanese": "こんにちは。林と申します。",                 "romaji": "Konnichiwa. Rin to moushimasu.",                 "meaning": "你好，我姓林。" },
+      { "speaker": "you",   "japanese": "こんにちは。リンと申します。",                 "romaji": "Konnichiwa. Rin to moushimasu.",                 "meaning": "你好，我姓林。" },
       { "speaker": "staff", "japanese": "こんにちは。田中です。よろしくお願いします。", "romaji": "Konnichiwa. Tanaka desu. Yoroshiku onegai shimasu.", "meaning": "你好，我是田中，請多指教。" },
       { "speaker": "you",   "japanese": "こちらこそよろしくお願いします。",           "romaji": "Kochira koso yoroshiku onegai shimasu.",         "meaning": "我才要請您多指教。" }
     ]

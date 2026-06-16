@@ -121,7 +121,7 @@
   { "id": "ja-greeting-020", "scenario": "greeting", "japanese": "失礼します", "romaji": "Shitsurei shimasu", "meaning": "打擾了／告辭", "isCustom": false, "isFavorite": false },
   { "id": "ja-introduction-001", "scenario": "introduction", "japanese": "台湾から来ました", "romaji": "Taiwan kara kimashita", "meaning": "我是台灣人（從台灣來）", "isCustom": false, "isFavorite": false },
   { "id": "ja-introduction-002", "scenario": "introduction", "japanese": "日本語を勉強しています", "romaji": "Nihongo wo benkyō shite imasu", "meaning": "我還在學習日語", "isCustom": false, "isFavorite": false },
-  { "id": "ja-introduction-003", "scenario": "introduction", "japanese": "はじめまして、林と申します", "romaji": "Hajimemashite, Rin to mōshimasu", "meaning": "初次見面，我姓林", "isCustom": false, "isFavorite": false },
+  { "id": "ja-introduction-003", "scenario": "introduction", "japanese": "はじめまして、リンと申します", "romaji": "Hajimemashite, Rin to mōshimasu", "meaning": "初次見面，我姓林", "isCustom": false, "isFavorite": false },
   { "id": "ja-introduction-004", "scenario": "introduction", "japanese": "私の名前はリンです", "romaji": "Watashi no namae wa Rin desu", "meaning": "我的名字是林", "isCustom": false, "isFavorite": false },
   { "id": "ja-introduction-005", "scenario": "introduction", "japanese": "日本語が少し話せます", "romaji": "Nihongo ga sukoshi hanasemasu", "meaning": "我會說一點日語", "isCustom": false, "isFavorite": false },
   { "id": "ja-introduction-006", "scenario": "introduction", "japanese": "日本語があまり上手ではありません", "romaji": "Nihongo ga amari jōzu de wa arimasen", "meaning": "我日語不太好", "isCustom": false, "isFavorite": false },
