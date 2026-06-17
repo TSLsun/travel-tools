@@ -1,6 +1,8 @@
 import type { ScenarioKey, AppSettings } from './types'
 
 export const SCENARIOS: { key: ScenarioKey; label: string; emoji: string }[] = [
+  { key: 'greeting',     label: 'Greeting',     emoji: '👋' },
+  { key: 'introduction', label: 'Introduction', emoji: '🙋' },
   { key: 'airport',      label: 'Airport',      emoji: '✈️' },
   { key: 'food',         label: 'Food',         emoji: '🍜' },
   { key: 'hotel',        label: 'Hotel',        emoji: '🏨' },

@@ -8,6 +8,8 @@ export type ScenarioKey =
   | 'emergency'
   | 'restaurant'
   | 'convenience'
+  | 'greeting'
+  | 'introduction'
 
 export type Theme = 'dark' | 'light' | 'sepia'
 export type NativeLang = 'zh-TW' | 'en'
