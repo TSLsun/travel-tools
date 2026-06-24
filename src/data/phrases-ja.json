@@ -20,6 +20,8 @@
   { "id": "ja-food-008", "scenario": "food", "japanese": "辛くないものはありますか？", "romaji": "Karakunai mono wa arimasu ka?", "meaning": "有不辣的嗎？", "isCustom": false, "isFavorite": false },
   { "id": "ja-food-009", "scenario": "food", "japanese": "とても美味しかったです", "romaji": "Totemo oishikatta desu", "meaning": "非常好吃", "isCustom": false, "isFavorite": false },
   { "id": "ja-food-010", "scenario": "food", "japanese": "アレルギーがあります", "romaji": "Arerugī ga arimasu", "meaning": "我有過敏", "isCustom": false, "isFavorite": false },
+  { "id": "ja-food-011", "scenario": "food", "japanese": "いただきます", "romaji": "Itadakimasu", "meaning": "我開動了（餐前致謝）", "isCustom": false, "isFavorite": false },
+  { "id": "ja-food-012", "scenario": "food", "japanese": "ごちそうさまでした", "romaji": "Gochisōsama deshita", "meaning": "謝謝招待（餐後致謝）", "isCustom": false, "isFavorite": false },
 
   { "id": "ja-hotel-001", "scenario": "hotel", "japanese": "チェックインをお願いします", "romaji": "Chekku in wo onegaishimasu", "meaning": "我要辦理入住", "isCustom": false, "isFavorite": false },
   { "id": "ja-hotel-002", "scenario": "hotel", "japanese": "予約をしています", "romaji": "Yoyaku wo shite imasu", "meaning": "我有訂房", "isCustom": false, "isFavorite": false },
@@ -71,8 +73,8 @@
   { "id": "ja-emergency-004", "scenario": "emergency", "japanese": "病院はどこですか？", "romaji": "Byōin wa doko desu ka?", "meaning": "醫院在哪裡？", "isCustom": false, "isFavorite": false },
   { "id": "ja-emergency-005", "scenario": "emergency", "japanese": "財布を盗まれました", "romaji": "Saifu wo nusumaremashita", "meaning": "我的錢包被偷了", "isCustom": false, "isFavorite": false },
   { "id": "ja-emergency-006", "scenario": "emergency", "japanese": "気分が悪いです", "romaji": "Kibun ga warui desu", "meaning": "我身體不舒服", "isCustom": false, "isFavorite": false },
-  { "id": "ja-emergency-007", "scenario": "emergency", "japanese": "日本語があまり話せません", "romaji": "Nihongo ga amari hanasemasen", "meaning": "我日語不太好", "isCustom": false, "isFavorite": false },
-  { "id": "ja-emergency-008", "scenario": "emergency", "japanese": "英語が話せますか？", "romaji": "Eigo ga hanasemasu ka?", "meaning": "你會說英語嗎？", "isCustom": false, "isFavorite": false },
+  { "id": "ja-emergency-007", "scenario": "emergency", "japanese": "けがをしました", "romaji": "Kega wo shimashita", "meaning": "我受傷了", "isCustom": false, "isFavorite": false },
+  { "id": "ja-emergency-008", "scenario": "emergency", "japanese": "ここが痛いです", "romaji": "Koko ga itai desu", "meaning": "這裡很痛", "isCustom": false, "isFavorite": false },
   { "id": "ja-emergency-009", "scenario": "emergency", "japanese": "パスポートをなくしました", "romaji": "Pasupōto wo nakushimashita", "meaning": "我的護照遺失了", "isCustom": false, "isFavorite": false },
   { "id": "ja-emergency-010", "scenario": "emergency", "japanese": "領事館に連絡したいです", "romaji": "Ryōjikan ni renraku shitai desu", "meaning": "我想聯絡領事館", "isCustom": false, "isFavorite": false },
 
