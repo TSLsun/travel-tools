@@ -95,7 +95,10 @@
     "title": "結帳要袋子",
     "turns": [
       { "speaker": "staff", "japanese": "袋はご利用ですか？",                     "romaji": "Fukuro wa goriyou desu ka?",            "meaning": "需要袋子嗎？" },
-      { "speaker": "you",   "japanese": "はい、お願いします。",                   "romaji": "Hai, onegai shimasu.",                  "meaning": "好的，麻煩了。" },
+      { "speaker": "you",   "japanese": "はい、お願いします。",                   "romaji": "Hai, onegai shimasu.",                  "meaning": "好的，麻煩了。",
+        "alternatives": [
+          { "japanese": "いいえ、大丈夫です。袋を持っています。", "romaji": "Iie, daijoubu desu. Fukuro o motte imasu.", "meaning": "不用，我有帶袋子。" }
+        ] },
       { "speaker": "staff", "japanese": "5円かかりますが、よろしいですか？",      "romaji": "Go-en kakarimasu ga, yoroshii desu ka?", "meaning": "要5日圓，可以嗎？" },
       { "speaker": "you",   "japanese": "大丈夫です。",                           "romaji": "Daijoubu desu.",                        "meaning": "沒問題。" }
     ]
@@ -107,7 +110,11 @@
     "title": "帶位與座位",
     "turns": [
       { "speaker": "staff", "japanese": "何名様ですか？",                                 "romaji": "Nanmei-sama desu ka?",                                 "meaning": "幾位？" },
-      { "speaker": "you",   "japanese": "二人です。",                                     "romaji": "Futari desu.",                                         "meaning": "兩位。" },
+      { "speaker": "you",   "japanese": "二人です。",                                     "romaji": "Futari desu.",                                         "meaning": "兩位。",
+        "alternatives": [
+          { "japanese": "三人です。", "romaji": "Sannin desu.", "meaning": "三位。" },
+          { "japanese": "一人です。", "romaji": "Hitori desu.", "meaning": "一位。" }
+        ] },
       { "speaker": "staff", "japanese": "禁煙席と喫煙席、どちらがよろしいですか？",       "romaji": "Kin'enseki to kitsuenseki, dochira ga yoroshii desu ka?", "meaning": "禁菸席還是吸菸席？" },
       { "speaker": "you",   "japanese": "禁煙席でお願いします。",                         "romaji": "Kin'enseki de onegai shimasu.",                        "meaning": "禁菸席，麻煩了。" }
     ]
@@ -204,7 +211,10 @@
     "title": "便當加熱",
     "turns": [
       { "speaker": "staff", "japanese": "お弁当は温めますか？",   "romaji": "Obentou wa atatamemasu ka?",  "meaning": "便當要加熱嗎？" },
-      { "speaker": "you",   "japanese": "はい、お願いします。",   "romaji": "Hai, onegai shimasu.",        "meaning": "好的，麻煩了。" }
+      { "speaker": "you",   "japanese": "はい、お願いします。",   "romaji": "Hai, onegai shimasu.",        "meaning": "好的，麻煩了。",
+        "alternatives": [
+          { "japanese": "いいえ、そのままで大丈夫です。", "romaji": "Iie, sono mama de daijoubu desu.", "meaning": "不用加熱，這樣就好。" }
+        ] }
     ]
   },
   {
@@ -213,7 +223,11 @@
     "title": "要筷子",
     "turns": [
       { "speaker": "staff", "japanese": "お箸はおつけしますか？",   "romaji": "Ohashi wa otsuke shimasu ka?",  "meaning": "需要筷子嗎？" },
-      { "speaker": "you",   "japanese": "はい、二膳ください。",     "romaji": "Hai, nizen kudasai.",           "meaning": "好的，給我兩雙。" }
+      { "speaker": "you",   "japanese": "はい、二膳ください。",     "romaji": "Hai, nizen kudasai.",           "meaning": "好的，給我兩雙。",
+        "alternatives": [
+          { "japanese": "三膳ください。",       "romaji": "Sanzen kudasai.",     "meaning": "給我三雙。" },
+          { "japanese": "いいえ、大丈夫です。", "romaji": "Iie, daijoubu desu.", "meaning": "不用了。" }
+        ] }
     ]
   },
   {
@@ -231,7 +245,11 @@
     "title": "付款方式",
     "turns": [
       { "speaker": "staff", "japanese": "お支払い方法は？",         "romaji": "Oshiharai houhou wa?",       "meaning": "請問付款方式？" },
-      { "speaker": "you",   "japanese": "現金でお願いします。",     "romaji": "Genkin de onegai shimasu.",  "meaning": "用現金。" }
+      { "speaker": "you",   "japanese": "現金でお願いします。",     "romaji": "Genkin de onegai shimasu.",  "meaning": "用現金。",
+        "alternatives": [
+          { "japanese": "カードでお願いします。",   "romaji": "Kādo de onegai shimasu.",       "meaning": "刷卡。" },
+          { "japanese": "交通系ICで払います。",     "romaji": "Kōtsūkei IC de haraimasu.",     "meaning": "用交通IC卡（Suica）付。" }
+        ] }
     ]
   },
   {
@@ -240,7 +258,10 @@
     "title": "集點卡",
     "turns": [
       { "speaker": "staff", "japanese": "ポイントカードはお持ちですか？",   "romaji": "Pointo kādo wa omochi desu ka?",  "meaning": "有集點卡嗎？" },
-      { "speaker": "you",   "japanese": "持っていません。",               "romaji": "Motte imasen.",                   "meaning": "沒有。" }
+      { "speaker": "you",   "japanese": "持っていません。",               "romaji": "Motte imasen.",                   "meaning": "沒有。",
+        "alternatives": [
+          { "japanese": "はい、あります。", "romaji": "Hai, arimasu.", "meaning": "有。" }
+        ] }
     ]
   },
   {
@@ -276,7 +297,10 @@
     "title": "不要收據",
     "turns": [
       { "speaker": "staff", "japanese": "レシートはご利用ですか？",   "romaji": "Reshīto wa goriyou desu ka?",  "meaning": "需要收據嗎？" },
-      { "speaker": "you",   "japanese": "いりません。",               "romaji": "Irimasen.",                    "meaning": "不用。" }
+      { "speaker": "you",   "japanese": "いりません。",               "romaji": "Irimasen.",                    "meaning": "不用。",
+        "alternatives": [
+          { "japanese": "はい、ください。", "romaji": "Hai, kudasai.", "meaning": "好，請給我。" }
+        ] }
     ]
   },
   {
@@ -387,6 +411,111 @@
       { "speaker": "staff", "japanese": "いってらっしゃい。",   "romaji": "Itterasshai.",    "meaning": "慢走。" },
       { "speaker": "you",   "japanese": "ただいま。",           "romaji": "Tadaima.",        "meaning": "我回來了。" },
       { "speaker": "staff", "japanese": "おかえりなさい。",     "romaji": "Okaerinasai.",    "meaning": "歡迎回來。" }
+    ]
+  },
+
+  {
+    "id": "ja-conv-airport-001",
+    "scenario": "airport",
+    "title": "找計程車乘車處",
+    "turns": [
+      { "speaker": "you",   "japanese": "すみません、タクシー乗り場はどこですか？", "romaji": "Sumimasen, takushī noriba wa doko desu ka?", "meaning": "不好意思，計程車乘車處在哪裡？" },
+      { "speaker": "staff", "japanese": "1階の外にございます。",                     "romaji": "Ikkai no soto ni gozaimasu.",                "meaning": "在一樓外面。" },
+      { "speaker": "you",   "japanese": "ありがとうございます。",                   "romaji": "Arigatou gozaimasu.",                        "meaning": "謝謝。" }
+    ]
+  },
+  {
+    "id": "ja-conv-airport-002",
+    "scenario": "airport",
+    "title": "找換錢處與ATM",
+    "turns": [
+      { "speaker": "you",   "japanese": "両替所はどこですか？",       "romaji": "Ryougaejo wa doko desu ka?",       "meaning": "換錢處在哪裡？",
+        "alternatives": [
+          { "japanese": "ATMはどこですか？", "romaji": "ATM wa doko desu ka?", "meaning": "ATM在哪裡？" }
+        ] },
+      { "speaker": "staff", "japanese": "到着ロビーにございます。",   "romaji": "Touchaku robī ni gozaimasu.",      "meaning": "在入境大廳。" },
+      { "speaker": "you",   "japanese": "ありがとうございます。",     "romaji": "Arigatou gozaimasu.",              "meaning": "謝謝。" }
+    ]
+  },
+
+  {
+    "id": "ja-conv-transit-001",
+    "scenario": "transit",
+    "title": "搭計程車報地址",
+    "turns": [
+      { "speaker": "you",   "japanese": "この住所までお願いします。",   "romaji": "Kono juusho made onegai shimasu.",  "meaning": "麻煩到這個地址（出示地址）。" },
+      { "speaker": "staff", "japanese": "かしこまりました。",           "romaji": "Kashikomarimashita.",               "meaning": "好的。" },
+      { "speaker": "you",   "japanese": "カードで払えますか？",         "romaji": "Kādo de haraemasu ka?",             "meaning": "可以刷卡嗎？",
+        "alternatives": [
+          { "japanese": "現金で払います。", "romaji": "Genkin de haraimasu.", "meaning": "我付現金。" }
+        ] },
+      { "speaker": "staff", "japanese": "はい、大丈夫です。",           "romaji": "Hai, daijoubu desu.",               "meaning": "可以。" }
+    ]
+  },
+  {
+    "id": "ja-conv-transit-002",
+    "scenario": "transit",
+    "title": "確認電車路線",
+    "turns": [
+      { "speaker": "you",   "japanese": "赤羽橋駅はこの電車で行けますか？", "romaji": "Akabanebashi-eki wa kono densha de ikemasu ka?", "meaning": "這班電車可以到赤羽橋站嗎？" },
+      { "speaker": "staff", "japanese": "はい、大江戸線で行けますよ。",     "romaji": "Hai, Ooedo-sen de ikemasu yo.",                  "meaning": "可以，搭大江戶線就能到。" },
+      { "speaker": "you",   "japanese": "ありがとうございます。",           "romaji": "Arigatou gozaimasu.",                            "meaning": "謝謝。" }
+    ]
+  },
+
+  {
+    "id": "ja-conv-hotel-001",
+    "scenario": "hotel",
+    "title": "提前寄放行李",
+    "turns": [
+      { "speaker": "you",   "japanese": "チェックインの前に荷物を預かってもらえますか？", "romaji": "Chekkuin no mae ni nimotsu o azukatte moraemasu ka?", "meaning": "可以在入住前先寄放行李嗎？" },
+      { "speaker": "staff", "japanese": "はい、お預かりします。",                         "romaji": "Hai, oazukari shimasu.",                              "meaning": "可以，幫您保管。" },
+      { "speaker": "you",   "japanese": "ありがとうございます。16時に戻ります。",         "romaji": "Arigatou gozaimasu. Juuroku-ji ni modorimasu.",       "meaning": "謝謝，我16點回來。" }
+    ]
+  },
+
+  {
+    "id": "ja-conv-convenience-011",
+    "scenario": "convenience",
+    "title": "行李托運（宅急便）",
+    "turns": [
+      { "speaker": "you",   "japanese": "すみません、宅急便をお願いしたいのですが。", "romaji": "Sumimasen, takkyuubin o onegai shitai no desu ga.", "meaning": "不好意思，我想寄宅急便（托運行李）。" },
+      { "speaker": "staff", "japanese": "はい、伝票にご記入ください。",               "romaji": "Hai, denpyou ni gokinyuu kudasai.",                 "meaning": "好的，請填寫託運單。" },
+      { "speaker": "you",   "japanese": "いつ届きますか？",                           "romaji": "Itsu todokimasu ka?",                               "meaning": "什麼時候會送到？" },
+      { "speaker": "staff", "japanese": "明日の午前中に届きます。",                   "romaji": "Ashita no gozenchuu ni todokimasu.",                "meaning": "明天上午會送到。" }
+    ]
+  },
+
+  {
+    "id": "ja-conv-navigation-001",
+    "scenario": "navigation",
+    "title": "買觀景台門票",
+    "turns": [
+      { "speaker": "you",   "japanese": "大人3枚ください。",         "romaji": "Otona sanmai kudasai.",              "meaning": "三張成人票。",
+        "alternatives": [
+          { "japanese": "大人2枚ください。", "romaji": "Otona nimai kudasai.", "meaning": "兩張成人票。" }
+        ] },
+      { "speaker": "staff", "japanese": "メインデッキですか？",       "romaji": "Mein dekki desu ka?",                "meaning": "是主觀景台嗎？" },
+      { "speaker": "you",   "japanese": "はい、メインデッキです。",   "romaji": "Hai, mein dekki desu.",              "meaning": "對，主觀景台。",
+        "alternatives": [
+          { "japanese": "いいえ、トップデッキです。", "romaji": "Iie, toppu dekki desu.", "meaning": "不是，是頂層展望台。" }
+        ] },
+      { "speaker": "staff", "japanese": "全部で3,600円です。",         "romaji": "Zenbu de sanzen-roppyaku-en desu.",  "meaning": "總共3600日圓。" }
+    ]
+  },
+
+  {
+    "id": "ja-conv-restaurant-011",
+    "scenario": "restaurant",
+    "title": "沒預約詢問座位",
+    "turns": [
+      { "speaker": "you",   "japanese": "予約していないのですが、3人で入れますか？", "romaji": "Yoyaku shite inai no desu ga, sannin de hairemasu ka?", "meaning": "我們沒有預約，三個人有位子嗎？" },
+      { "speaker": "staff", "japanese": "少々お待ちください。15分ほどかかります。",   "romaji": "Shoushou omachi kudasai. Juugo-fun hodo kakarimasu.",   "meaning": "請稍等，大約要等15分鐘。" },
+      { "speaker": "you",   "japanese": "はい、待ちます。",                           "romaji": "Hai, machimasu.",                                       "meaning": "好，我們等。",
+        "alternatives": [
+          { "japanese": "じゃあ、また今度にします。", "romaji": "Jaa, mata kondo ni shimasu.", "meaning": "那我們下次再來。" }
+        ] },
+      { "speaker": "staff", "japanese": "こちらでお待ちください。",                   "romaji": "Kochira de omachi kudasai.",                            "meaning": "請在這邊稍候。" }
     ]
   }
 ]

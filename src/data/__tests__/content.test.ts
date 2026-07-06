@@ -26,6 +26,44 @@ describe('new content: greeting & introduction', () => {
   })
 })
 
+describe('new content: reply options & Tokyo trip scenarios', () => {
+  it('has at least 10 conversations with alternative replies', () => {
+    const withAlts = allConversations.filter(c =>
+      c.turns.some(t => t.alternatives && t.alternatives.length > 0)
+    )
+    expect(withAlts.length).toBeGreaterThanOrEqual(10)
+  })
+
+  it('alternatives only appear on "you" turns and are well-formed', () => {
+    for (const conv of allConversations) {
+      for (const turn of conv.turns) {
+        if (!turn.alternatives) continue
+        expect(turn.speaker).toBe('you')
+        expect(turn.alternatives.length).toBeGreaterThan(0)
+        for (const alt of turn.alternatives) {
+          expect(alt.japanese).toBeTruthy()
+          expect(alt.romaji).toBeTruthy()
+          expect(alt.meaning).toBeTruthy()
+        }
+      }
+    }
+  })
+
+  it('covers Tokyo trip scenarios', () => {
+    const count = (s: string) => allConversations.filter(c => c.scenario === s).length
+    expect(count('airport')).toBeGreaterThanOrEqual(2)
+    expect(count('transit')).toBeGreaterThanOrEqual(2)
+    expect(count('hotel')).toBeGreaterThanOrEqual(1)
+    expect(count('navigation')).toBeGreaterThanOrEqual(1)
+    expect(count('convenience')).toBeGreaterThanOrEqual(11)
+    expect(count('restaurant')).toBeGreaterThanOrEqual(11)
+  })
+
+  it('includes luggage forwarding (takkyuubin) conversation', () => {
+    expect(allConversations.some(c => c.turns.some(t => t.japanese.includes('宅急便')))).toBe(true)
+  })
+})
+
 describe('data integrity', () => {
   it('all phrase ids are unique', () => {
     const ids = allPhrases.map(p => p.id)
