@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.4.0](https://github.com/TSLsun/travel-tools/compare/travel-tools-v1.3.0...travel-tools-v1.4.0) (2026-07-06)
+
+
+### Features
+
+* add greeting and introduction scenarios ([#15](https://github.com/TSLsun/travel-tools/issues/15)) ([9529861](https://github.com/TSLsun/travel-tools/commit/9529861f62ce82ff4bb4a60bc4096a4929f1f756))
+* add meal-ritual and injury phrases ([#17](https://github.com/TSLsun/travel-tools/issues/17)) ([d2d584c](https://github.com/TSLsun/travel-tools/commit/d2d584ce9051d2b0054ee00fff34e57583a7f0c9))
+
 ## [1.3.0](https://github.com/TSLsun/travel-tools/compare/travel-tools-v1.2.0...travel-tools-v1.3.0) (2026-06-15)
 
 
