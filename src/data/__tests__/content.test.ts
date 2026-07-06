@@ -52,9 +52,11 @@ describe('new content: reply options & Tokyo trip scenarios', () => {
   it('covers Tokyo trip scenarios', () => {
     const count = (s: string) => allConversations.filter(c => c.scenario === s).length
     expect(count('airport')).toBeGreaterThanOrEqual(2)
-    expect(count('transit')).toBeGreaterThanOrEqual(2)
-    expect(count('hotel')).toBeGreaterThanOrEqual(1)
-    expect(count('navigation')).toBeGreaterThanOrEqual(1)
+    expect(count('transit')).toBeGreaterThanOrEqual(4)
+    expect(count('hotel')).toBeGreaterThanOrEqual(2)
+    expect(count('navigation')).toBeGreaterThanOrEqual(3)
+    expect(count('emergency')).toBeGreaterThanOrEqual(1)
+    expect(count('shopping')).toBeGreaterThanOrEqual(11)
     expect(count('convenience')).toBeGreaterThanOrEqual(11)
     expect(count('restaurant')).toBeGreaterThanOrEqual(11)
   })

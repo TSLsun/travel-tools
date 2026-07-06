@@ -517,5 +517,97 @@
         ] },
       { "speaker": "staff", "japanese": "こちらでお待ちください。",                   "romaji": "Kochira de omachi kudasai.",                            "meaning": "請在這邊稍候。" }
     ]
+  },
+
+  {
+    "id": "ja-conv-hotel-002",
+    "scenario": "hotel",
+    "title": "溫泉旅館入住",
+    "turns": [
+      { "speaker": "you",   "japanese": "チェックインをお願いします。予約したリンです。", "romaji": "Chekkuin o onegai shimasu. Yoyaku shita Rin desu.", "meaning": "麻煩辦理入住，我是預約的林。" },
+      { "speaker": "staff", "japanese": "ようこそ。夕食は18時からです。",                 "romaji": "Youkoso. Yuushoku wa juuhachi-ji kara desu.",       "meaning": "歡迎光臨。晚餐從18點開始。" },
+      { "speaker": "you",   "japanese": "温泉は何時まで入れますか？",                     "romaji": "Onsen wa nanji made hairemasu ka?",                 "meaning": "溫泉可以泡到幾點？" },
+      { "speaker": "staff", "japanese": "夜11時までです。",                               "romaji": "Yoru juuichi-ji made desu.",                        "meaning": "到晚上11點。" }
+    ]
+  },
+
+  {
+    "id": "ja-conv-transit-003",
+    "scenario": "transit",
+    "title": "找月台搭特急",
+    "turns": [
+      { "speaker": "you",   "japanese": "すみません、10番ホームはどこですか？",   "romaji": "Sumimasen, juu-ban hōmu wa doko desu ka?",   "meaning": "不好意思，10號月台在哪裡？",
+        "alternatives": [
+          { "japanese": "この電車は河口湖行きですか？", "romaji": "Kono densha wa Kawaguchiko-yuki desu ka?", "meaning": "這班電車是往河口湖的嗎？" }
+        ] },
+      { "speaker": "staff", "japanese": "あちらの階段を上がってください。",       "romaji": "Achira no kaidan o agatte kudasai.",         "meaning": "請上那邊的樓梯。" },
+      { "speaker": "you",   "japanese": "ありがとうございます。",                 "romaji": "Arigatou gozaimasu.",                        "meaning": "謝謝。" }
+    ]
+  },
+  {
+    "id": "ja-conv-transit-004",
+    "scenario": "transit",
+    "title": "買機場特快車票",
+    "turns": [
+      { "speaker": "you",   "japanese": "スカイライナーの切符を大人3枚ください。", "romaji": "Sukairainā no kippu o otona sanmai kudasai.", "meaning": "給我三張Skyliner成人票。" },
+      { "speaker": "staff", "japanese": "何時発がよろしいですか？",                 "romaji": "Nanji-hatsu ga yoroshii desu ka?",            "meaning": "要幾點出發的？" },
+      { "speaker": "you",   "japanese": "次のでお願いします。",                     "romaji": "Tsugi no de onegai shimasu.",                 "meaning": "下一班，麻煩了。",
+        "alternatives": [
+          { "japanese": "7時発でお願いします。", "romaji": "Shichi-ji-hatsu de onegai shimasu.", "meaning": "7點出發的，麻煩了。" }
+        ] },
+      { "speaker": "staff", "japanese": "全部で7,710円です。",                       "romaji": "Zenbu de nanasen-nanahyaku-juu-en desu.",     "meaning": "總共7710日圓。" }
+    ]
+  },
+
+  {
+    "id": "ja-conv-navigation-002",
+    "scenario": "navigation",
+    "title": "找入場閘門（球場/展館）",
+    "turns": [
+      { "speaker": "you",   "japanese": "すみません、24ゲートはどこですか？", "romaji": "Sumimasen, nijuuyon gēto wa doko desu ka?", "meaning": "不好意思，24號門在哪裡？" },
+      { "speaker": "staff", "japanese": "左に真っ直ぐ行ってください。",       "romaji": "Hidari ni massugu itte kudasai.",           "meaning": "往左直走。" },
+      { "speaker": "you",   "japanese": "ありがとうございます。",             "romaji": "Arigatou gozaimasu.",                       "meaning": "謝謝。" }
+    ]
+  },
+  {
+    "id": "ja-conv-navigation-003",
+    "scenario": "navigation",
+    "title": "找投幣置物櫃",
+    "turns": [
+      { "speaker": "you",   "japanese": "コインロッカーはどこですか？",   "romaji": "Koin rokkā wa doko desu ka?",   "meaning": "投幣置物櫃在哪裡？" },
+      { "speaker": "staff", "japanese": "改札の外にあります。",           "romaji": "Kaisatsu no soto ni arimasu.",  "meaning": "在剪票口外面。" },
+      { "speaker": "you",   "japanese": "大きいサイズはありますか？",     "romaji": "Ookii saizu wa arimasu ka?",    "meaning": "有大尺寸的嗎？" },
+      { "speaker": "staff", "japanese": "はい、ございます。",             "romaji": "Hai, gozaimasu.",               "meaning": "有的。" }
+    ]
+  },
+
+  {
+    "id": "ja-conv-emergency-001",
+    "scenario": "emergency",
+    "title": "遺失物品",
+    "turns": [
+      { "speaker": "you",   "japanese": "すみません、電車に忘れ物をしました。", "romaji": "Sumimasen, densha ni wasuremono o shimashita.", "meaning": "不好意思，我把東西忘在電車上了。" },
+      { "speaker": "staff", "japanese": "何を忘れましたか？",                   "romaji": "Nani o wasuremashita ka?",                      "meaning": "忘了什麼東西？" },
+      { "speaker": "you",   "japanese": "財布です。",                           "romaji": "Saifu desu.",                                   "meaning": "錢包。",
+        "alternatives": [
+          { "japanese": "携帯です。",   "romaji": "Keitai desu.", "meaning": "手機。" },
+          { "japanese": "かばんです。", "romaji": "Kaban desu.",  "meaning": "包包。" }
+        ] },
+      { "speaker": "staff", "japanese": "遺失物センターにご案内します。",       "romaji": "Ishitsubutsu sentā ni goannai shimasu.",        "meaning": "我帶您去遺失物中心。" }
+    ]
+  },
+
+  {
+    "id": "ja-conv-shopping-011",
+    "scenario": "shopping",
+    "title": "電器海外使用",
+    "turns": [
+      { "speaker": "you",   "japanese": "これは海外で使えますか？",       "romaji": "Kore wa kaigai de tsukaemasu ka?",              "meaning": "這個在國外可以用嗎？" },
+      { "speaker": "staff", "japanese": "はい、100-240V対応です。",       "romaji": "Hai, hyaku kara nihyaku-yonjuu boruto taiou desu.", "meaning": "可以，支援100-240V電壓。" },
+      { "speaker": "you",   "japanese": "じゃあ、これをください。",       "romaji": "Jaa, kore o kudasai.",                          "meaning": "那我要這個。",
+        "alternatives": [
+          { "japanese": "もう少し考えます。", "romaji": "Mou sukoshi kangaemasu.", "meaning": "我再考慮一下。" }
+        ] }
+    ]
   }
 ]
