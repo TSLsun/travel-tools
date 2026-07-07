@@ -43,6 +43,24 @@ export default function ConversationDetail({ conversation, T, onClose }: Props) 
                   <div style={{ fontSize: 12, opacity: 0.85, marginTop: 2 }}>{turn.romaji}</div>
                   <div style={{ fontSize: 13, marginTop: 3 }}>{turn.meaning}</div>
                 </div>
+                {isYou && turn.alternatives && turn.alternatives.length > 0 && (
+                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 6, marginTop: 6, maxWidth: '85%' }}>
+                    <span style={{ fontSize: 10, color: T.muted, padding: '0 4px' }}>也可以說：</span>
+                    {turn.alternatives.map((alt, j) => (
+                      <div
+                        key={j}
+                        onClick={() => speak(alt.japanese)}
+                        style={{ border: `1.5px dashed ${T.accent}`, color: T.text, borderRadius: 14, padding: '8px 12px', cursor: 'pointer' }}
+                      >
+                        <div style={{ fontFamily: "'Noto Sans JP', sans-serif", fontSize: 14, fontWeight: 600, lineHeight: 1.4 }}>
+                          {alt.japanese} <span style={{ fontSize: 12, opacity: 0.85 }}>🔊</span>
+                        </div>
+                        <div style={{ fontSize: 11, color: T.muted, marginTop: 2 }}>{alt.romaji}</div>
+                        <div style={{ fontSize: 12, marginTop: 2 }}>{alt.meaning}</div>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             )
           })}

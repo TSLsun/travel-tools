@@ -26,11 +26,18 @@ export interface Phrase {
 
 export type Speaker = 'you' | 'staff'
 
+export interface ReplyOption {
+  japanese: string
+  romaji: string
+  meaning: string
+}
+
 export interface ConversationTurn {
   speaker: Speaker
   japanese: string
   romaji: string
   meaning: string
+  alternatives?: ReplyOption[]   // other replies you could give instead (e.g. yes vs no)
 }
 
 export interface ConversationSet {
