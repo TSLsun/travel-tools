@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/TSLsun/travel-tools/compare/travel-tools-v1.4.0...travel-tools-v1.5.0) (2026-07-07)
+
+
+### Features
+
+* add reply alternatives and Tokyo trip scenarios ([#18](https://github.com/TSLsun/travel-tools/issues/18)) ([31f5a55](https://github.com/TSLsun/travel-tools/commit/31f5a55ab782966147cb873e16ca0eb3f8664fdc))
+
 ## [1.4.0](https://github.com/TSLsun/travel-tools/compare/travel-tools-v1.3.0...travel-tools-v1.4.0) (2026-07-06)
 
 
